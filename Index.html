@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <title>
+    Assign 1-Introduction to HTML
+    </title>
+</head>
+<!----------Body--------------->
+<body>
+
+
+    <!--------
+    Q 1: What is HTML? Explain the following HTML elements using an appropriate example other than covered in the class : 
+    ● <table>
+    ● <ol> & <ul>
+    ● <form>, <input> and <label>
+    ● Self-Ending  
+
+    Ans: HTML is markup language to designed / to make skeleton of webpage which delivered on internet to view page for end user on broswer.
+    HTML elemenst are building block for HTML page. its document to wriitern for webpage to tranlated on browser.
+
+    Table:
+        this tag is used to make grid view format with row & columns
+        or
+        - display the data into tabular format. this contain header body footer section.
+        - tr tag is used to defined the row & td tag is used for columns. th is use for coulmn header.
+        - thead tag used for the Table header ie column heading
+            -this tage more usefull when data is large. it cannot fit within  one page it goes on next page. on next page it show again coulmn heading.
+        - tbody tag used for table content / body.
+
+        
+    ------>
+    <h3>Table</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Name</th>
+                    <th>Mob No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sagar Worriors</td>
+                    <td>836975....</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!----
+        
+        <ol> & <ul>
+            -to display data in list format or create list in Well format
+            Order list & unordered List
+            Attribute :
+            type: define the list format:
+            Ol type=Numbered/Alphabet etc format & UL type : Bullet format
+
+            li tag is for make list items in UL or OL format
+        ---->
+        <h3>OL & UL</h3>
+        <ol type="1">
+            <li>Lumia 950</li>
+            <li>Lumia 950XL</li>
+            <li>Lumia 235</li>
+        </ol>
+        <ul type="square">
+            <li>Samgsung Galaxy Grand</li>
+            <li>Samgsung Galaxy S5</li>
+            <li>Samgsung M42 5G</li>
+        </ul>
+
+
+        <!----
+        <form>, <input> and <label>
+            form:
+            its used to create form on webpage.its used to collect data from user. 
+
+            <input> is main tag for createing form field & type is main attribute define the type of feild eg email, number, string data types.
+            <input type="text"/>
+            there many types: text, file,number, email, mobile, password,radio,checkbox,month,url etc
+
+            <lable> is used for just visulization for which type of text to be enter in input.
+
+            form Attribute: method, action,
+            method: get/post [GET : on URL all data is visible, POST : Data is not visible in URL]
+            action: after submiting where it navigate the URL.
+        ----->
+        <h3> form </h3>
+        <form action="/Assig1/Index.html">
+            <div>
+                <label for="fname">First Name </label>
+                <input type="text" name="fname" required/>
+            </div>
+            <br>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" required/>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" required/>
+            </div>
+            <br>
+            <button>Submit</button>
+        </form>
+
+    <!----
+    ● Self-Ending
+        -self-Ending tag mean no content on it or need to write for close tag
+        - to avoid closing tag
+        eg Br,input, hr
+    ---->
+        <hr size=5 color="green"/>
+        <br/>
+
+
+    <!----
+    
+    Q. 2 - Let’s assume I want to build a website which contains/shows HTML codes to the client.
+(Please take https://www.internetingishard.com/html-and-css/basic-web-pages/ as an reference)
+Write a HTML document code which displays ‘My Document’ as a document heading.
+
+        Heading:
+            - it used to display title subtile etc.
+            - there is 6 type of heading
+            - from <h1> to <h6> 
+            - h1 tag is higher order heading where h6 is lower
+
+    ------>
+
+    <h1>'My Document’ h1 tag</h1>
+    <h2>'My Document’ h2 tag</h2>
+    <h3>'My Document’ h3 tag</h3>
+    <h4>'My Document’ h4 tag</h4>
+    <h5>'My Document’ h5 tag</h5>
+    <h6>'My Document’ h6 tag</h6>
+
+
+
+
+
+    <!-----
+       Q. 3 - Explain the term HTML Quotes and also explain the following terms too :
+        ● &lt; stands for the less-than
+        ● &gt; stabds for greater tha
+        ● &lte; stands for less-than-equal-to
+        ● &gte; stands for greater-than-equal-to
+        ● &ldquo;left double quotion mark
+        ● &rdquo; right double quotion mark
+
+        this are unicode that we writtern insted of sign
+
+
+        
+    ----->
+
+
+
+    <!----
+        Q. 4 - Describe the various HTML Elements required to embed the video in an document and further explain the following HTML attributes :
+            ● <video>
+            ● controls
+            ● src
+            ● poster
+            ● width
+            ● height    
+
+        Ans: 
+            - <video> tag is used for add/embed video on webpage such as video audio etc
+            attributes:
+            controls - this attrubte help to provide control on video. it contains Play,Pause,Volume,Fullscreen toggle etc
+                     - its boolean values
+            src - its source of video. ie path of the file.
+            poster - create thumbmnail on file ie show image until file cannot play or downloading
+            width - define the width of video window
+            height - define the height of video window
+
+    ---->
+
+    <video width="320" height="240" autoplay poster="https://railsware.com/blog/wp-content/uploads/2018/09/2400%D1%851260-rw-blog-node-js.png"> 
+        <source src="https://www.youtube.com/watch?v=fBNz5xF-Kx4">
+    </video>
+
+    <!-----
+        Q. 5 - What do you mean by HTML Attributes? Explain the importance of HTML Attributes in terms of functionalities. Write a HTML document code explaining the various HTML attributes
+        Ans :   - it define the behavior of HTML elements.
+                - attributes is provide additional functionality to tag.
+                - provides additional styling (attribute) to the element.
+
+        <img src="mypass.jpg" alt="Passport Photo">
+
+        src & alt is the attribute of img tag
+        src: provide path/location whre is image store
+        alt: if image cant load /not found. then instead of images it show the text which  is added on alt attributes.
+
+
+        form : action,method
+        input  : type, name, id value, required
+        table: border, cellspacing, cellpadding, bgcolor,width, height
+        a : href,color, bgcolor,target
+        p: style, 
+        hr: size, color
+        marquee: behavior, bgcolor, direction, height, scrolldelay
+
+
+    ------>
+
+</body>
+</html>
